@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title> Students blog</title>
+    </head>
+    <body>
+        <h1> ЗАГОЛОВОК</h1>
+        {% for post in posts %}
+        
+        <div>
+            <p>pushed: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+        {% endfor %}
+    </body>
+</html>    
